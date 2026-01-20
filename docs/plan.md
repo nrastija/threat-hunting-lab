@@ -36,7 +36,7 @@ Dijagram mrežne arhitekture (Slika 2) prikazuje logičku strukturu laboratorijs
 * Evaluaciju učinkovitosti sigurnosnih kontrola u kontroliranom i izoliranom laboratorijskom okruženju.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Dijagram.png?raw=true" alt="Slika 2. Dijagram mrežne arhitekture">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Dijagram.png?raw=true" alt="Slika 2. Dijagram mrežne arhitekture" width="500">
   <br>
   <b>Slika 2. Dijagram mrežne arhitekture laboratorijskog okruženja</b>
 </p>
@@ -81,7 +81,7 @@ Tijekom instalacije, skripta također konfigurira osnovne sigurnosne postavke Wa
 Tijekom instalacije, administratorska lozinka generira se automatski te se ispisuje u konzoli. Primjer ispisa: INFO: The password for user admin is xxxxxxxxxxxx
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Zavr%C5%A1niIspisAutomatiziraneInstalacijskeSkripte.png?raw=true" alt="Završni ispis automatizirane instalacijske skripte">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Zavr%C5%A1niIspisAutomatiziraneInstalacijskeSkripte.png?raw=true" alt="Završni ispis automatizirane instalacijske skripte" width="500">
   <br>
   <b>Slika 3. Završni ispis automatizirane instalacijske skripte</b>
 </p>
@@ -97,7 +97,7 @@ Pristup **Wazuh Dashboardu** ostvaren je putem web sučelja:
 Dashboard omogućuje centralizirani pregled agenata, sigurnosnih događaja, upozorenja te integriranih alata poput IDS-a i honeypota.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/WazuhDashboardLoginSu%C4%8Delje.png?raw=true" alt="Wazuh Dashboard login sučelje">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/WazuhDashboardLoginSu%C4%8Delje.png?raw=true" alt="Wazuh Dashboard login sučelje" width="500">
   <br>
   <b>Slika 4. Wazuh Dashboard login sučelje pristupljeno putem HTTPS protokola</b>
 </p>
@@ -116,7 +116,7 @@ Uspješno povezivanje Windows endpointa sa središnjim SIEM sustavom zahtijeva i
 Nakon konfiguracije parametara, sustav generira specifičnu PowerShell naredbu koju je potrebno izvršiti na Windows virtualnom stroju. Ova naredba automatski preuzima MSI instalacijski paket s udaljenog repozitorija i vrši tihu instalaciju agenta u pozadini. Po završetku instalacije, agent se aktivira kao sistemski servis, čime se uspostavlja kriptirana veza za prijenos telemetrije. Finalna potvrda uspješnosti procesa vidljiva je u "Agent Summary" panelu dashboarda, gdje status agenta prelazi u "Active". Suricata IDS kontinuirano prati mrežni promet s endpointa, a Wazuh agent prikuplja standardne Windows Event Logove i druge sigurnosne podatke. Time se osigurava centralizirana vidljivost nad operativnim i sigurnosnim događajima krajnjih točaka. U ovoj fazi, sustav počinje prikupljati standardne podatke poput Windows Event Logova, informacija o prijavama i odjavama korisnika, sistemskih događaja te vršiti osnovne sigurnosne baseline provjere.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/CentralniPregledWazuhDashboarda.png?raw=true" alt="Slika 5. Potvrda aktivnog agenta">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/CentralniPregledWazuhDashboarda.png?raw=true" alt="Slika 5. Potvrda aktivnog agenta" width="500">
   <br>
   <b>Slika 5. Centralni pregled Wazuh Dashboarda s potvrdom jednog aktivnog agenta</b>
 </p>
@@ -125,7 +125,7 @@ Nakon konfiguracije parametara, sustav generira specifičnu PowerShell naredbu k
 Za prikupljanje napredne endpoint telemetrije implementiran je Microsoft Sysmon (System Monitor), koji proširuje standardne Windows sigurnosne logove i omogućuje detaljan uvid u aktivnosti operacijskog sustava. Sysmon bilježi ključne događaje poput kreiranja novih procesa (Event ID 1), mrežnih konekcija iniciranih od strane procesa (Event ID 3) te pristupa memoriji procesa (Event ID 10), što je ključno za detekciju sofisticiranih napadačkih alata i manipulacija u memoriji sustava [4]. Instalacija je izvedena uz korištenje službenog paketa Sysmon i unaprijed definirane SwiftOnSecurity konfiguracijske datoteke, optimizirane za sigurnosni nadzor i prihvatljivu količinu generiranih logova. Tijekom instalacije Sysmon je registriran kao sistemski servis, omogućujući kontinuirano praćenje relevantnih događaja u stvarnom vremenu. Svi generirani događaji integrirani su u Windows Event Log, odakle ih Wazuh agent prikuplja i prosljeđuje u centralni SIEM sustav, čime se osigurava centralizirano prikupljanje, korelacija i analiza napredne endpoint telemetrije unutar laboratorijskog okruženja.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Provjera%20statusa%20Sysmon64%20servisa%20na%20Windows%2010%20Endpointu%20putem%20PowerShell%20konzole.png?raw=true" alt="Provjera statusa Sysmon64 servisa">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Provjera%20statusa%20Sysmon64%20servisa%20na%20Windows%2010%20Endpointu%20putem%20PowerShell%20konzole.png?raw=true" alt="Provjera statusa Sysmon64 servisa" width="500">
   <br>
   <b>Slika 6. Provjera statusa Sysmon64 servisa na Windows 10 Endpointu putem PowerShell konzole</b>
 </p>
@@ -142,7 +142,7 @@ Cowrie je postavljen unutar izoliranog Python virtualnog okruženja (python3 -m 
 - Verifikacija: Ispravnost rada potvrđena je naredbom cowrie status, koja je vratila aktivan Process ID (PID), signalizirajući da je sustav spreman za prikupljanje podataka o napadima koje će biti simulirani.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Potvrda%20uspje%C5%A1nog%20pokretanja%20Cowrie%20SSH%20honeypota.png?raw=true" alt="Potvrda uspješnog pokretanja Cowrie SSH honeypota">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Potvrda%20uspje%C5%A1nog%20pokretanja%20Cowrie%20SSH%20honeypota.png?raw=true" alt="Potvrda uspješnog pokretanja Cowrie SSH honeypota" width="500">
   <br>
   <b>Slika 7. Potvrda uspješnog pokretanja Cowrie SSH honeypota</b>
 </p>
@@ -178,7 +178,7 @@ Za uspješan lov na prijetnje integrirani su različiti izvori podataka kako bi 
 Lovačke aktivnosti pokreću se na temelju triju hipoteza koje pretpostavljaju prisutnost specifičnih tehnika napada. Lovačke aktivnosti pokreću se na temelju triju hipoteza koje pretpostavljaju prisutnost specifičnih tehnika napada. Kako bi se osigurao strukturiran pristup, odabrane tehnike su vizualizirane pomoću MITRE ATT&CK Navigatora, što omogućuje jasan pregled pokrivenosti napadačkog lanca (Slika 8).
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Mapiranje%20testiranih%20tehnika%20unutar%20MITRE%20ATT%26CK%20Navigatora.png?raw=true" alt="Slika 8. MITRE Navigator">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Mapiranje%20testiranih%20tehnika%20unutar%20MITRE%20ATT%26CK%20Navigatora.png?raw=true" alt="Slika 8. MITRE Navigator" width="500">
   <br>
   <b>Slika 8. Mapiranje testiranih tehnika unutar MITRE ATT&CK Navigatora</b>
 </p>
