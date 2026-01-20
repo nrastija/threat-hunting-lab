@@ -71,12 +71,12 @@ Uspješan lov na prijetnje nije slučajan događaj, već strukturirani proces ko
 
 Ciklički pristup osigurava da se aktivnosti lova temelje na jasnoj logici, dok se stečena saznanja sustavno koriste za poboljšanje detekcije, vidljivosti i sigurnosne arhitekture. U nastavku su opisane četiri ključne, međusobno povezane faze ciklusa lova na prijetnje, koje su vizualno prikazane na Slici 1.
 
-
 <p align="center">
-  <img src="images/CiklusLova.png" alt="Ciklus lova na prijetnje">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/main/results/screenshots/analysis-reporting/CiklusLova.png?raw=true" alt="Slika 1. Ciklus lova na prijetnje" width="500">
   <br>
-  <b>Slika 1. Ciklus lova na prijetnje (vlastita izrada, 2025.)</b>
+  <b>Slika 1. Ciklus lova na prijetnje</b>
 </p>
+
 
 ### 2.4.1.1. Faza 1: Formuliranje hipoteze (eng. Hypothesis)
 
