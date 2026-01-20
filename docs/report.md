@@ -24,7 +24,7 @@ Prvi lov fokusirao se na detekciju pokušaja neovlaštenog pristupa putem SSH pr
 **Tablica 1.** Zapis lova #01: Detekcija SSH Brute-Force napada
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Uspje%C5%A1an%20napad%20grubom%20silom%20(Brute%20Force).png?raw=true" alt="Slika 9. Uspješan napad grubom silom">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Uspje%C5%A1an%20napad%20grubom%20silom%20(Brute%20Force).png?raw=true" alt="Slika 9. Uspješan napad grubom silom" width="500">
   <br>
   <b>Slika 9. Uspješan napad grubom silom (Brute Force)</b>
 </p>
@@ -32,7 +32,7 @@ Prvi lov fokusirao se na detekciju pokušaja neovlaštenog pristupa putem SSH pr
 Na Slici 9 vidljivo je izvođenje automatiziranog Brute Force napada alatom Hydra s Kali Linux stroja na SSH servis honeypota. Vidljivi su višestruki uspješni pokušaji prijave s različitim lozinkama iz predefiniranog rječnika.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Prikaz%20sirovih%20JSON%20logova%20u%20Cowrie%20sustavu%20koji%20potvr%C4%91uju%20uspje%C5%A1nu%20detekciju%20napada%C4%8Dkih%20poku%C5%A1aja%20prijave.png?raw=true" alt="Slika 10. Prikaz sirovih JSON logova">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Prikaz%20sirovih%20JSON%20logova%20u%20Cowrie%20sustavu%20koji%20potvr%C4%91uju%20uspje%C5%A1nu%20detekciju%20napada%C4%8Dkih%20poku%C5%A1aja%20prijave.png?raw=true" alt="Slika 10. Prikaz sirovih JSON logova" width="500">
   <br>
   <b>Slika 10. Prikaz sirovih JSON logova u Cowrie sustavu koji potvrđuju uspješnu detekciju napadačkih pokušaja prijave</b>
 </p>
@@ -75,7 +75,7 @@ Napad se temelji na Cowrie honeypotu koji prihvaća sve lozinke, zbog čega su s
    Wazuh je bilježio pojedinačne događaje, ali nije bilo korelacije koja bi ukazala na sustavni brute-force napad (Slika 11.)
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Prikaz%20sigurnosnih%20doga%C4%91aja%20u%20Wazuhu%20prije%20primjene%20pravila.png?raw=true" alt="Prikaz događaja prije pravila">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Prikaz%20sigurnosnih%20doga%C4%91aja%20u%20Wazuhu%20prije%20primjene%20pravila.png?raw=true" alt="Prikaz događaja prije pravila" width="500">
   <br>
   <b>Slika 11. Prikaz sigurnosnih događaja u Wazuhu prije primjene pravila</b>
 </p>
@@ -84,7 +84,7 @@ Napad se temelji na Cowrie honeypotu koji prihvaća sve lozinke, zbog čega su s
    Sustav je uspješno povezao događaje i generirao alarm razine 8, jasno identificirajući prijetnju (Slika 12.)
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Generirani%20alarm%20razine%208%20nakon%20primjene%20prilago%C4%91enog%20pravila.png?raw=true" alt="Alarm nakon pravila">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Generirani%20alarm%20razine%208%20nakon%20primjene%20prilago%C4%91enog%20pravila.png?raw=true" alt="Alarm nakon pravila" width="500">
   <br>
   <b>Slika 12. Generirani alarm razine 8 nakon primjene prilagođenog pravila</b>
 </p>
@@ -156,7 +156,7 @@ Tijekom simulacije, operacijski sustav i antivirusna zaštita blokirali su odre�
 2. Wazuh vizualizacija: Na Wazuh dashboardu generirani su zapisi koji koreliraju ove pokušaje s MITRE ATT&CK okvirima, omogućujući analitičaru brzu identifikaciju prirode napada (Slika 18).
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Prikaz%20kriti%C4%8Dnih%20sigurnosnih%20doga%C4%91aja%20na%20Wazuh%20Dashboardu.png?raw=true" alt="Prikaz kritičnih sigurnosnih događaja na Wazuh Dashboardu">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Prikaz%20kriti%C4%8Dnih%20sigurnosnih%20doga%C4%91aja%20na%20Wazuh%20Dashboardu.png?raw=true" alt="Prikaz kritičnih sigurnosnih događaja na Wazuh Dashboardu" width="500">
   <br>
   <b>Slika 18. Prikaz kritičnih sigurnosnih događaja na Wazuh Dashboardu (Agent 001)</b>
 </p>
@@ -196,7 +196,7 @@ Proces eksfiltracije podataka izveden je kroz četiri ključna koraka, koristeć
 - Korak 1 - Priprema osjetljivog podatka: Na Windows Endpoint VM-u kreirana je testna datoteka secret.txt koja sadrži simulirani osjetljivi podatak. Datoteka služi kao osnova za praćenje protoka informacija kroz mrežu.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Priprema%20podataka%20za%20eksfiltraciju%20putem%20PowerShell-a.png?raw=true" alt="Priprema podataka za eksfiltraciju">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Priprema%20podataka%20za%20eksfiltraciju%20putem%20PowerShell-a.png?raw=true" alt="Priprema podataka za eksfiltraciju" width="500">
   <br>
   <b>Slika 19. Priprema podataka za eksfiltraciju putem PowerShell-a</b>
 </p>
@@ -204,7 +204,7 @@ Proces eksfiltracije podataka izveden je kroz četiri ključna koraka, koristeć
 - Korak 2 - Kodiranje i priprema podataka (Slika 20): Sadržaj datoteke kodiran je u Base64 format. Kodirani niz je zatim podijeljen u manje fragmente kako bi svaki mogao stati u naziv DNS poddomene, što je standardna tehnika za izbjegavanje detekcije mrežnih vatrozida.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/PowerShell%20%E2%80%93%20Base64%20encoding%20i%20priprema%20DNS%20upita.png?raw=true" alt="PowerShell Base64 encoding i priprema DNS upita">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/PowerShell%20%E2%80%93%20Base64%20encoding%20i%20priprema%20DNS%20upita.png?raw=true" alt="PowerShell Base64 encoding i priprema DNS upita" width="500">
   <br>
   <b>Slika 20. PowerShell – Base64 encoding i priprema DNS upita</b>
 </p>>
@@ -212,7 +212,7 @@ Proces eksfiltracije podataka izveden je kroz četiri ključna koraka, koristeć
 - Korak 3 - Slanje podataka putem DNS upita (Slika 21): Svaki fragment kodiranog podatka poslan je pomoću naredbe nslookup. Iako sustav prikazuje pogrešku pri razlučivanju (Timeout), svaki upit nosi dio tajnog podatka prema napadačevom sustavu.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/PowerShell%20%E2%80%93%20izvo%C4%91enje%20DNS%20eksfiltracije%20(nslookup).png?raw=true" alt="PowerShell izvođenje DNS eksfiltracije">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/PowerShell%20%E2%80%93%20izvo%C4%91enje%20DNS%20eksfiltracije%20(nslookup).png?raw=true" alt="PowerShell izvođenje DNS eksfiltracije" width="500">
   <br>
   <b>Slika 21. PowerShell – izvođenje DNS eksfiltracije (nslookup)</b>
 </p>
@@ -220,7 +220,7 @@ Proces eksfiltracije podataka izveden je kroz četiri ključna koraka, koristeć
 - Korak 4 - Presretanje DNS prometa (Slika 22): Na Kali Linux VM-u pokrenut je alat tcpdump za praćenje prometa na UDP portu 53. Zabilježeni su upiti s neuobičajenim i dugim nazivima domena, što je karakterističan indikator DNS eksfiltracije.
 
 <p align="center">
-  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Presretanje%20mre%C5%BEnog%20prometa%20alatom%20tcpdump%20na%20Kali%20Linuxu.png?raw=true" alt="Presretanje mrežnog prometa alatom tcpdump">
+  <img src="https://github.com/nrastija/threat-hunting-lab/blob/dev/docs/images/Presretanje%20mre%C5%BEnog%20prometa%20alatom%20tcpdump%20na%20Kali%20Linuxu.png?raw=true" alt="Presretanje mrežnog prometa alatom tcpdump" width="500">
   <br>
   <b>Slika 22. Presretanje mrežnog prometa alatom tcpdump na Kali Linuxu</b>
 </p>
